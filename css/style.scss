@@ -1,0 +1,62 @@
+$blue: #3bbfce;
+
+body {
+	color: $blue;
+	margin: 0;
+}
+
+.triforce{
+	position: relative;
+	width: 240px;
+	height:200px;
+	margin: 0 auto;
+	/*left: 50%;
+	right: -50%;*/
+	background-image: url(../images/trollface.png);
+	background-size: 49%;
+	background-position: 87px 93px;
+	background-repeat: no-repeat;
+}
+
+.tricontain{
+	position: absolute;
+	width: 120px;
+	opacity: 1;
+
+
+}
+
+.power{
+	@extend .tricontain;
+	left: 25%;
+
+
+}
+
+.wisdom{
+	@extend .tricontain;
+	top: 50%;
+	right: 50%;
+}
+
+.courage{
+	@extend .tricontain;
+	top: 50%;
+	left: 50%;
+}
+
+
+
+.triangle {
+	width: 0; 
+	height: 0; 
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid #FFD700;
+
+}
+
+.triforce2, .triforce3{
+	@extend .triforce;
+	display: none;
+}
